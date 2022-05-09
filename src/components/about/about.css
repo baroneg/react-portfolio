@@ -1,0 +1,144 @@
+.about-container {
+  background-color: var(--semi-transparent);
+  border-radius: 60px;
+  width: 15rem;
+  height: 20rem;
+  margin: 2.3rem auto 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic {
+  border-radius: 60px;
+  width: 13.5rem;
+  height: 20rem;
+  padding: 1rem 0;
+}
+
+.about-data {
+  text-align: center;
+  margin: 2.3rem auto !important;
+}
+
+.about-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1rem;
+  margin: 4rem auto 2rem;
+  justify-content: space-evenly;
+  justify-items: center;
+}
+
+.about-box {
+  background-color: var(--semi-transparent);
+  width: 90%;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.about-box > span {
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+
+.about-data > p {
+  font-weight: 200;
+}
+
+.about-buttons {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  margin-top: 2rem !important;
+}
+
+/* ============MEDIA QUERIES============*/
+@media screen and (max-width: 390px) {
+  .skills-container {
+    min-width: 80% !important;
+  }
+
+  .skills-data {
+    font-size: 0.6rem !important;
+  }
+
+  .about-info {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .about-box {
+    margin: 1.7rem auto;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .about-container {
+    max-width: 60% !important;
+  }
+
+  .about-info {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5%;
+  }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+  .about-container {
+    width: 19rem !important;
+    height: 20rem;
+  }
+
+  .profile-pic {
+    width: 17rem;
+    height: 20rem;
+  }
+
+  .about-info {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5%;
+  }
+
+  .about-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 13rem;
+    height: 13rem;
+  }
+
+}
+
+@media screen and (min-width: 1320px) {
+  .about-container {
+    width: 22rem !important;
+    height: 25rem;
+  }
+
+  .profile-pic {
+    width: 20rem;
+    height: 25rem;
+  }
+  
+  .about-info {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3% 25%;
+    margin: 0;
+    gap: 2rem;
+  }
+
+  .about-me {
+    padding: 0 10rem;
+  } 
+}
+
+@media screen and (min-width: 1500px) {
+  .about-data {
+    padding: 0 10%;
+  }
+}

@@ -1,0 +1,155 @@
+.logo {
+  width: 70%;
+}
+
+.menu {
+  position: absolute;
+  top: 7rem;
+  right: 1.5rem;
+  width: 12rem;
+  padding: 1.5rem;
+  transform: scale(0);
+  background-color: var(--clear-blue-variant);
+  opacity: 0;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.menu > .list {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  flex-direction: column;
+}
+
+.list-link {
+  display: inline-block;
+  color: var(--white);
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+.navbar.container {
+  margin-top: 2rem;
+  padding: 2% 9%;
+}
+
+.list-link.activated {
+  color: var(--clear-blue);
+}
+
+.list-link.activated:hover {
+  color: var(--navy);
+}
+
+.btn.activated {
+  background-color: transparent;
+  color: var(--navy);
+  border: 1px solid var(--navy);
+}
+
+.btn.activated:hover {
+  background-color: var(--clear-blue);
+  border: none;
+}
+
+.menu.activated {
+  box-shadow: rgba(3, 102, 214, 0.6) 0px 0px 0px 3px;
+  right: 2rem;
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.5s ease;
+}
+
+.header-container {
+  text-align: center;
+  margin-top: 5rem !important;
+}
+
+.header-img {
+  margin: auto;
+  width: 90%;
+}
+
+/* ============MEDIA QUERIES============*/
+@media screen and (min-width: 600px) {
+  .header-img {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .logo {
+    width: 80%;
+  }
+
+  .navbar.container {
+    margin-top: 2rem;
+    padding: 2% 1%;
+  }
+
+  .menu {
+    width: initial;
+    padding: 0;
+    background-color: transparent;
+    opacity: initial;
+    transform: initial;
+    top: initial;
+    margin-right: 70px;
+  }
+
+  .menu > .list {
+    flex-direction: row;
+  }
+
+  .list {
+    display: none;
+  }
+
+  .header-img {
+    width: 60%;
+  }
+
+  .header-container > h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  .header-img {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .header-img {
+    width: 35%;
+  }
+
+  .header-container > h1 {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .header-img {
+    width: 30%;
+  }
+
+  .header-container > h1 {
+    font-size: 3rem;
+  }
+
+  .header-container > h2 {
+    font-size: 2rem;
+  }
+
+  .header-container > h3 {
+    font-size: 1.2rem;
+  }
+}

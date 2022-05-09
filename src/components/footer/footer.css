@@ -1,0 +1,57 @@
+footer {
+    background-color: var(--clear-blue);
+    padding: 2rem;
+    margin-top: 5rem;
+}
+
+.footer-container {
+    text-align: center;
+    margin: auto;
+}
+
+.logo-container > a > img {
+    width: 4rem;
+    margin: 1.5rem auto 2.5rem;
+}
+
+.socials-container {
+    display: inline-flex;
+    gap: 1.2rem;
+    margin-bottom: 1.7rem;
+}
+
+.socials:hover {
+    color: var(--clear-blue-variant) !important;
+    transition: var(--transition);
+}
+
+.arrow {
+    margin: 1.5rem auto 2.5rem;
+}
+
+.arrow:hover {
+    transform: translateY(-0.75rem) !important;
+    transition: var(--transition);
+}
+
+.freepik {
+    font-size: .8rem;
+    padding: 1.5rem;
+}
+
+.freepik > a {
+    color: var(--navy) !important;
+}
+
+.freepik > a:hover {
+    color: var(--clear-blue-variant) !important;
+}
+
+.developer > a {
+    font-weight: 500;
+    color: var(--navy)
+}
+
+.developer > a:hover {
+    color: var(--clear-blue-variant);
+}
