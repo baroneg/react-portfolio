@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import ProfilePicture from "../../assets/profile-picture.png";
+import ProfilePicture from "../../assets/profile-picture.jpg";
 import Achievement from "./Achievement";
 import { FaGraduationCap } from "react-icons/fa";
 import { BiCode } from "react-icons/bi";

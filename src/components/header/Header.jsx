@@ -12,7 +12,7 @@ function Header() {
 
       <div className="container header-container">
         <h2>Hello I'm</h2>
-        <h1>Fernando</h1>
+        <h1>Francisco</h1>
         <h3>Software Engineer</h3>
         <img src={Illustration} className="header-img" alt="Guy using a laptop" />
       </div>
